@@ -65,5 +65,14 @@ for (const kbd of kbds) {
 
 
 
+function showNow(){
+   
+  const show =  document.getElementById("show");
+  show.classList.remove('hidden');
+   
+   // document.getElementById("show").removeClassList("hidden");
+
+}
+
 
  
