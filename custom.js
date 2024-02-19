@@ -1,5 +1,5 @@
 const kbds = document.getElementsByClassName('kbd');
-console.log(kbds);
+
 
 for (const kbd of kbds) {
     
@@ -63,3 +63,7 @@ for (const kbd of kbds) {
 
 
 
+
+
+
+ 
