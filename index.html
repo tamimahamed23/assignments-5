@@ -51,9 +51,9 @@
 
 
 
-        <!-- <div id="card" class=" flex flex-col sm:flex-col lg:flex-row md:flex-row xl:flex-row gap-5  w-4/5 items-center mt-[450px] absolute">
+        <div id="card" class=" flex flex-col sm:flex-col lg:flex-row md:flex-row xl:flex-row gap-5  w-4/5 items-center mt-[450px] absolute">
 
-
+<!-- 
             <div id="small-card" class="text-red-100  p-5 flex  gap-3 items-center rounded-lg bg-white w-48 justify-center border border-black">
                 <span>
                     <i class="fa-solid fa-users text-[#1DD100]"></i>
@@ -76,7 +76,7 @@
                 </span>
                <div class="text-black"> <h4 class="text-3xl font-semibold">500 <span class="text-orange-400">K</span></h4>
                 <p>Regested People</p></div>
-            </div>
+            </div> -->
 
             
 
@@ -84,7 +84,7 @@
 
 
             
-        </div> -->
+        </div>
      
     </div>
 </section>
@@ -183,23 +183,19 @@
 
 <section id="last-section" class="w-4/5 m-auto py-10">
                          
-    <div id="section-container" class="bg-white lg:flex">
+    <div id="section-container" class="bg-white lg:flex gap-10">
        <!-- Fast last div start here -->
 
        <div id="fast-div" class=" p-5 w-1/2">
-           <h1 class=" font-semibold text-3xl">Select Your Area</h1>
+           <h1 class=" text-5xl font-semibold py-5">Select Your Area</h1>
            <div class="flex justify-between p-5 border-dotted ">
             <button class="btn"> <img src="images/seat-gray.png" alt="">Abable</button>
             <button class="btn"><img src="images/seat-green-filled.png" alt="">Active</button>
            </div>
 
-           <div class="flex justify-end">
-            <button class="btn">button</button>
+           <div class="flex w-full justify-end ">
+             <img src="images/steering-wheel-14.png" alt="" class="flex  w-1/5">
            </div>
-
-
-
-
 
            <!------ start here    -->
 
@@ -336,14 +332,14 @@
 
        <!--- Last Last Div Star Here-->
 
-       <div class="bg-purple-50 p-5 w-1/2">
-            <h1>Select Your Area</h1>
+       <div class=" p-10  w-full flex flex-col gap-10">
+            <h1 class="text-5xl font-semibold py-5">Select Your Area</h1>
 
-            <div id="total-seat-area">
+            <div id="total-seat-area" class="bg-[#F7F8F8] p-10 rounded-lg">
              
-                <div class="flex gap-5 justify-between font-semibold">
+                <div class="flex  flex-row justify-between text-xl font-semibold">
                     <div id="sit">
-                        <span>Site</span><span id="add-sit" class="">0</span>
+                        <span>Site</span><span id="add-sit" class="bg-[#1DD100] p-1 rounded-xl text-white">0</span>
                     </div>
 
                     <div id="class">
@@ -368,20 +364,46 @@
                 <div id="js-div">
 
                 </div>
+
+
+
+                <div id="total-price">
+                    <h3 class="flex justify-between text-2xl py-5 font-semibold">Total Price <div>BTD <span id="now-total">0</span></div></h3>
+                </div>
+                  <div class="cuppon flex justify-between p-5">
+                         <input type="text" placeholder="Have a Cupon?" class="text-center border-none" id="input">
+                         <button class="btn bg-[#1DD100]">Apply</button>
+                  </div>
+                <div id="grand-total-price" class="">
+                    <h3 class="flex justify-between text-2xl py-5 font-semibold">Grand Total <div>BTD <span id="gran-total">0</span></div></h3>
+                </div>
                 
             </div>
 
 
-            <div id="total-price">
-                <h3 class="flex justify-between">Total Price <div>BTD <span id="now-total">0</span></div></h3>
-            </div>
-              <div class="cuppon flex justify-between p-5">
-                     <input type="text" placeholder="Have a Cupon?" class="text-center border-none" id="input">
-                     <button class="btn bg-[#1DD100]">Apply</button>
-              </div>
-            <div id="grand-total-price">
-                <h3 class="flex justify-between">Grand Total <div>BTD <span id="gran-total">0</span></div></h3>
-            </div>
+          
+
+
+
+            <form action="" class=" p-5 flex flex-col gap-5">
+                <label for="text" class="text-2xl font-semibold">
+                   Passenger Name
+                </label>
+                <input type="text" placeholder="Enter Your Name" class="p-6 text-xl outline-none border">
+
+                <label for="number" class="text-2xl font-semibold">
+                    Phone Number
+                 </label>
+                 <input type="number" placeholder="Enter Your Number" class="p-6 text-xl outline-none border">
+
+                <label for="email" class="text-2xl font-semibold">
+                    Email ID
+                 </label>
+                 <input type="email" placeholder="Enter Your Email" class="p-6 text-xl outline-none border">
+
+
+                 <button class="bg-[#1DD100] p-6 font-semibold text-white rounded-lg">Submit</button>
+            </form>
 
        </div>
 

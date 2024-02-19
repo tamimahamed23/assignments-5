@@ -8,12 +8,21 @@ for (const kbd of kbds) {
     e.target.style.color = "white";
      // Create a div element
 
+
+     
+    
+     
+
       const innerText = e.target.innerText;
       const getPrice = document.getElementById("price").innerText;
       const parsIntPrice = parseInt(getPrice);
      const div = document.createElement("div");
      const p = document.createElement("p");
-     p.innerText = innerText
+     p.innerText = innerText;
+
+     
+
+
      const span = document.createElement("span");
      span.innerText = "Economoy";
      const price = document.createElement("span");
@@ -37,10 +46,6 @@ for (const kbd of kbds) {
      document.getElementById("gran-total").innerText = myGrandTotal;
 
 
-     
-
-
-     
      const getSet = document.getElementById("sit").innerText;
      const parsIntSet = parseInt(getSet);
      const mySet = parsIntSet -1;
@@ -48,8 +53,9 @@ for (const kbd of kbds) {
      const getAddSeat = document.getElementById("add-sit").innerText;
      const parsIntAddSeat = parseInt(getAddSeat);
      const myAddSeat = parsIntAddSeat +1;
-     document.getElementById("add-sit").innerText = myAddSeat;    
-    
+     document.getElementById("add-sit").innerText = myAddSeat;  
+     
+     
                
     
    });
